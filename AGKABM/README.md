@@ -1,3 +1,17 @@
-在当前目录下，运行 `python3 -u ./model/train.py`，会用 `./data` 中的数据训出一个模型存放到 ./pth 中，训练集/验证集比例 7:3
+### README
 
-运行 `python3 -u ./model/test.py ${model_name.pth}`，会用 `./test_data` 中的数据来进行测试
+To train a model, run the following command in the current directory:
+
+```bash
+python3 -u ./model/train.py
+```
+
+This will use the data from the `./data` directory to train a model and save it to the `./pth` directory. The training and validation datasets are split in a 7:3 ratio.
+
+To test the model, run the following command:
+
+```bash
+python3 -u ./model/test.py ${model_name.pth}
+```
+
+This will use the data from the `./test_data` directory for testing.
